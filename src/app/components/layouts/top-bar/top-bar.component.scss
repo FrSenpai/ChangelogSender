@@ -1,0 +1,36 @@
+header {
+  margin: auto;
+  width: 100%;
+  background-color: #121212;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    margin-left: 40px;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    ul {
+      margin-right: 40px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      list-style: none;
+      width: 60%;
+      li {
+        color: white;
+        font-size: 16px;
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+
+}
