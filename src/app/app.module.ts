@@ -18,7 +18,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { FirebaseErrorService } from './services/helpers/firebase-error.service'
 import { AlertService } from './services/helpers/alert.service';
 import { HomeComponent } from './components/home/home.component';
-import { ChangelogComponent } from './changelog/changelog.component'
+import { ChangelogComponent } from './components/changelog/changelog.component'
 const firebaseConfig = {
   apiKey: "AIzaSyA0aT0mJR5ZscjKAqah6sEEn1NmKF7lYT8",
   authDomain: "changelogsender.firebaseapp.com",
@@ -44,7 +44,7 @@ const firebaseConfig = {
     AngularFirestoreModule, // firestore
     AngularFireAuthModule, // auth
     AngularFireStorageModule,
-    MatFormFieldModule, 
+    MatFormFieldModule,
     MatInputModule,
     BrowserAnimationsModule,
     MatButtonModule

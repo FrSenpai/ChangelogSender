@@ -7,7 +7,8 @@ import { IsConnectedGuard } from './guards/is-connected.guard'
 const routes: Routes = [
   {path: "home", component: HomeComponent, canActivate: [IsConnectedGuard]},
   {path: "login", component: LoginComponent},
-  {path: "*", component: HomeComponent}
+  {path: "",pathMatch: 'full', redirectTo: "home"},
+  {path: "*", component: HomeComponent, canActivate: [IsConnectedGuard]}
 ];
 
 @NgModule({

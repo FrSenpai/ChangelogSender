@@ -1,0 +1,23 @@
+.ctnResume {
+  background-color: whitesmoke;
+  padding-top: 20px;
+
+  section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    p {
+      width: 70%;
+      margin: auto;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 0;
+  }
+
+}
