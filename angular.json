@@ -121,8 +121,16 @@
               "devServerTarget": "ChangelogSender:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "ChangelogSender"
+    }
+  },
+  "defaultProject": "ChangelogSender",
+  "cli": {
+    "analytics": false
+  }
 }

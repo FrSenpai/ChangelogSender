@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "changelogsender"
+  },
+  "targets": {
+    "changelogsender": {
+      "hosting": {
+        "ChangelogSender": [
+          "changelogsender"
+        ]
+      }
+    }
   }
 }
