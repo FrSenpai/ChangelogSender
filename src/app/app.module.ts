@@ -9,7 +9,15 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-
+import { LoginComponent } from './components/login/login.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+import { FirebaseErrorService } from './services/helpers/firebase-error.service'
+import { AlertService } from './services/helpers/alert.service';
+import { HomeComponent } from './components/home/home.component'
 const firebaseConfig = {
   apiKey: "AIzaSyA0aT0mJR5ZscjKAqah6sEEn1NmKF7lYT8",
   authDomain: "changelogsender.firebaseapp.com",
@@ -22,17 +30,24 @@ const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    TopBarComponent
+    TopBarComponent,
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule, // firestore
     AngularFireAuthModule, // auth
-    AngularFireStorageModule // storage
+    AngularFireStorageModule,
+    MatFormFieldModule, 
+    MatInputModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
-  providers: [AuthentificationService],
+  providers: [AuthentificationService,FirebaseErrorService, AlertService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
