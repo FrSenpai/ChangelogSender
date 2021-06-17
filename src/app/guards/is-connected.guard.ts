@@ -13,6 +13,7 @@ export class IsConnectedGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
       //we check if the user is logged in
+    if (this.auth?.user$?.value?.uid) return true
     return this.fireAuth.authState.pipe(
       map((authState) => {
         if (authState !== null) {
