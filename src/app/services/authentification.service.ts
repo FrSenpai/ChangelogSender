@@ -11,7 +11,6 @@ export class AuthentificationService {
   constructor(private fireAuth: AngularFireAuth) { 
     this.fireAuth.authState.subscribe((res) => {
       this.user$.next(res)
-      console.log(this.isConnected())
     })
   }
 
@@ -28,8 +27,11 @@ export class AuthentificationService {
       } 
       return false
     }).catch((err) => {
-      console.log(err.code)
       return {code: err.code}
     })
+  }
+
+  public logout():Promise<any> {
+    return this.fireAuth.signOut()
   }
 }

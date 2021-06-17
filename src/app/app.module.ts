@@ -21,6 +21,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ChangelogComponent } from './components/changelog/changelog.component'
 import { EditorModule } from '@tinymce/tinymce-angular';
 import {MatIconModule} from '@angular/material/icon';
+import { ToastrModule } from 'ngx-toastr';
 
 const firebaseConfig = {
   apiKey: "AIzaSyA0aT0mJR5ZscjKAqah6sEEn1NmKF7lYT8",
@@ -52,7 +53,10 @@ const firebaseConfig = {
     BrowserAnimationsModule,
     MatButtonModule,
     EditorModule,
-    MatIconModule
+    MatIconModule,
+    ToastrModule.forRoot({
+      positionClass: 'toast-bottom-right',
+    })
   ],
   providers: [AuthentificationService,FirebaseErrorService, AlertService],
   bootstrap: [AppComponent]
