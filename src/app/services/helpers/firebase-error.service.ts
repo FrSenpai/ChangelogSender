@@ -6,7 +6,12 @@ import { Injectable } from '@angular/core';
 export class FirebaseErrorService {
 
   constructor() {}
-  
+
+  /**
+   *
+   * @param err string --> code of firebase error
+   * @returns string --> error message translated
+   */
   handleError(err): string {
     switch (err) {
       //Login

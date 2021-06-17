@@ -16,6 +16,9 @@ export class TopBarComponent implements OnInit {
 
   }
 
+  /**
+   * Logout the user
+   */
   public logout():void {
     this.auth.logout().then(() => {
       this.alert.displayAlert('success', 'Déconnexion réussie !')
