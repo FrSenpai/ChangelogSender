@@ -1,0 +1,96 @@
+.ctnResume {
+  background-image: url('/assets/images/bg2.jpg');
+  height: 100%;
+
+  .ctnBanner {
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+
+    div {
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: auto;
+        min-height: 100%;
+        width: 100%;
+        filter: brightness(30%);
+      }
+    }
+
+
+    h2 {
+      text-align: center;
+      color: whitesmoke;
+      margin: 0;
+      height: 40px;
+
+      font-size: 35px;
+      position: relative;
+      top: -170px;
+    }
+  }
+
+  p {
+    width: 70%;
+    margin: auto;
+    color: whitesmoke;
+    font-weight: 100;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .ctnCards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+
+    .cards {
+      max-width: 300px;
+      width: 30%;
+      height: 300px;
+      background-color: #1a1a1a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px solid #a08c71;
+
+      span {
+        color: whitesmoke;
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      }
+
+      mat-icon {
+        color: #a08c71;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+      }
+
+      button {
+        background-color: #a08c71;
+        border-radius: 20px;
+        ::ng-deep .mat-button-wrapper {
+          color: #1a1a1a;
+        }
+        &:hover {
+          ::ng-deep .mat-button-wrapper {
+            color: whitesmoke;
+          }
+        }
+      }
+
+      
+    }
+  }
+
+
+}

@@ -29,6 +29,11 @@ header {
         color: white;
         font-size: 16px;
         font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+          color: #a08c71;
+        }
       }
     }
   }

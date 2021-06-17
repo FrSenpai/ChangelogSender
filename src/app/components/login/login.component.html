@@ -1,0 +1,19 @@
+<section>
+  <h2><img src="/assets/images/form_header.png" alt="Agence 1400 image d'entête du login"></h2>
+  <form [formGroup]="loginF" (ngSubmit)="submit()">
+    <h3>Panel de connexion</h3>
+    <mat-form-field>
+      <mat-label for="emailAgence1400">Email</mat-label>
+      <input name="emailAgence1400" formControlName="email" type="email" matInput placeholder="Ex: pat@example.com">
+      <mat-hint>Remplissez votre email</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Mot de passe</mat-label>
+      <input formControlName="password" type="password" matInput>
+      <mat-hint>Remplissez votre mot de passe</mat-hint>
+    </mat-form-field>
+
+    <button type="submit" [disabled]="this.loginF.invalid && this.loginF.touched" mat-raised-button class="btnBackground">Connexion</button>
+  </form>
+</section>
