@@ -25,7 +25,7 @@
       color: whitesmoke;
       margin: 0;
       height: 40px;
-      
+
       font-size: 35px;
       position: relative;
       top: -170px;
@@ -42,7 +42,55 @@
     margin-top: 20px;
   }
 
+  .ctnCards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
 
+    .cards {
+      max-width: 300px;
+      width: 30%;
+      height: 300px;
+      background-color: #1a1a1a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px solid #a08c71;
+
+      span {
+        color: whitesmoke;
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      }
+
+      mat-icon {
+        color: #a08c71;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+      }
+
+      button {
+        background-color: #a08c71;
+        border-radius: 20px;
+        ::ng-deep .mat-button-wrapper {
+          color: #1a1a1a;
+        }
+        &:hover {
+          ::ng-deep .mat-button-wrapper {
+            color: whitesmoke;
+          }
+        }
+      }
+
+      
+    }
+  }
 
 
 }
