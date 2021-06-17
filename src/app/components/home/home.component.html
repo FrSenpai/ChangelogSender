@@ -1,31 +1,29 @@
 <section class="ctnResume">
-  <section class="ctnBanner">
-    <div>
-      <img src="assets/images/banner.jpg" alt="logo Agence 1400 agence de communication">
-    </div>
-    <h2>ChangelogSender - Agence 1400</h2>
-  </section>
-  
-
-    <p>
+  <app-banner [bannerTitle]="'ChangelogSender - Agence 1400'"></app-banner>
+  <p>
     Une de nos problématiques principales étant d'améliorer et de faciliter
     constamment notre relation client, nous mettons à disposition un outil
-    permettant d'envoyer un récapitulatif des dernières mises à jour effectuées à nos clients.
-    <br>
-    Dans celui-ci, vous pouvez mettre en forme un changelog grâce à un éditeur WYSIWYG, puis l'envoyer par mail directement à une liste d'adresse mail selon le client choisi.
+    permettant d'envoyer un récapitulatif des dernières mises à jour effectuées
+    à nos clients.
+    <br />
+    Dans celui-ci, vous pouvez mettre en forme un changelog grâce à un éditeur
+    WYSIWYG, puis l'envoyer par mail directement à une liste d'adresse mail
+    selon le client choisi.
   </p>
   <section class="ctnCards">
     <div class="cards">
       <span>Carnet de clients</span>
       <mat-icon>support_agent</mat-icon>
-      <button type="submit" mat-raised-button class="btnBackground">Accéder au carnet</button>
+      <button type="submit" mat-raised-button class="btnBackground">
+        Accéder au carnet
+      </button>
     </div>
     <div class="cards">
       <span>Changelog</span>
       <mat-icon>history_edu</mat-icon>
-      <button type="submit" mat-raised-button class="btnBackground">Rédiger un changelog</button>
+      <button type="submit" mat-raised-button class="btnBackground">
+        Rédiger un changelog
+      </button>
     </div>
   </section>
-
-
 </section>

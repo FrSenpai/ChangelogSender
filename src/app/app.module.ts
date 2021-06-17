@@ -22,6 +22,7 @@ import { ChangelogComponent } from './components/changelog/changelog.component'
 import { EditorModule } from '@tinymce/tinymce-angular';
 import {MatIconModule} from '@angular/material/icon';
 import { ToastrModule } from 'ngx-toastr';
+import { BannerComponent } from './components/layouts/banner/banner.component'
 
 const firebaseConfig = {
   apiKey: "AIzaSyA0aT0mJR5ZscjKAqah6sEEn1NmKF7lYT8",
@@ -38,7 +39,8 @@ const firebaseConfig = {
     TopBarComponent,
     LoginComponent,
     HomeComponent,
-    ChangelogComponent
+    ChangelogComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

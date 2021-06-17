@@ -1,0 +1,29 @@
+.ctnBanner {
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+
+  div {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: auto;
+      min-height: 100%;
+      width: 100%;
+      filter: brightness(30%);
+    }
+  }
+
+
+  h2 {
+    text-align: center;
+    color: whitesmoke;
+    margin: 0;
+    height: 40px;
+
+    font-size: 35px;
+    position: relative;
+    top: -170px;
+  }
+}
