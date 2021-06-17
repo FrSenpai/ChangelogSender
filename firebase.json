@@ -1,6 +1,7 @@
 {
   "hosting": [
     {
+      "target":"ChangelogSender",
       "public": "dist/ChangelogSender",
       "ignore": [
         "firebase.json",
