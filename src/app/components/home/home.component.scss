@@ -1,23 +1,48 @@
 .ctnResume {
-  background-color: whitesmoke;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    margin: auto;
-    p {
-      width: 70%;
-      margin: auto;
+  background-image: url('/assets/images/bg2.jpg');
+  height: 100%;
+
+  .ctnBanner {
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+
+    div {
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: auto;
+        min-height: 100%;
+        width: 100%;
+        filter: brightness(30%);
+      }
+    }
+
+
+    h2 {
+      text-align: center;
+      color: whitesmoke;
+      margin: 0;
+      height: 40px;
+      
+      font-size: 35px;
+      position: relative;
+      top: -170px;
     }
   }
 
-  h2 {
+  p {
+    width: 70%;
+    margin: auto;
+    color: whitesmoke;
+    font-weight: 100;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-top: 0;
+    margin-top: 20px;
   }
+
+
+
 
 }

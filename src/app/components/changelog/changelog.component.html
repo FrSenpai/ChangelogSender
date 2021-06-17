@@ -1,9 +1,8 @@
 <section>
   <h3>Créer un changelog</h3>
   <form [formGroup]="changelogF">
-    <editor apiKey="n0zjjp855koo6c45xxa86ptqybm4b9eakycd7lrnyr7nrcd2"
-    formControlName="changelog"
-   [init]="{
+    <editor apiKey="n0zjjp855koo6c45xxa86ptqybm4b9eakycd7lrnyr7nrcd2" formControlName="changelog" [init]="{
+     
      height: 300,
      menubar: true,
      plugins: [
@@ -15,8 +14,7 @@
        'undo redo | formatselect | bold italic backcolor | \
        alignleft aligncenter alignright alignjustify | \
        bullist numlist outdent indent | removeformat | help'
-   }"
- ></editor>
+   }"></editor>
   </form>
 
 </section>

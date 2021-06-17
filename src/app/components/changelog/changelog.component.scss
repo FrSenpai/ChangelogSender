@@ -4,7 +4,10 @@ section {
   align-items: center;
   justify-content: center;
   background-color: #121212;
-  padding-bottom: 40px;
+  padding: 0px 40px 40px 40px;
+  width: fit-content;
+  margin: auto;
+  border-radius: 20px;
   h3 {
     color: white;
     height: 100%;
@@ -14,5 +17,9 @@ section {
     padding: 20px 0px 20px 0px;
   }
 
-  form {}
+  form {
+    editor {
+      border-radius: 25px;
+    }
+  }
 }
