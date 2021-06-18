@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthentificationService } from 'src/app/services/authentification.service';
+import { AlertService } from 'src/app/services/helpers/alert.service';
 
 @Component({
   selector: 'app-top-bar',
@@ -7,10 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private auth:AuthentificationService, private alert: AlertService,private router:Router) { }
 
   ngOnInit(): void {
-    console.log('lol')
+
+  }
+
+  /**
+   * Logout the user
+   */
+  public logout():void {
+    this.auth.logout().then(() => {
+      this.alert.displayAlert('success', 'Déconnexion réussie !')
+      location.reload()
+    })
   }
 
 }

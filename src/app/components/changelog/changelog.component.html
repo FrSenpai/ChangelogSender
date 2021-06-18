@@ -1,8 +1,25 @@
 <section>
-  <h3>Créer un changelog</h3>
+  <app-banner [bannerTitle]="'Créer un changelog'"></app-banner>
   <form [formGroup]="changelogF">
+    <div class="ctnRowForm">
+      <mat-form-field appearance="fill">
+        <mat-label class="whiteSmokeLabel">Destinataire</mat-label>
+        <!-- TODO:CRUD customers -->
+        <mat-select>
+          <mat-option value="VTAP">VTAP</mat-option>
+          <mat-option value="Distripub">Distripub</mat-option>
+          <mat-option value="WAC">WAC</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label class="whiteSmokeLabel">Date de la MAJ</mat-label>
+        <input class="whiteSmokeLabel" matInput [matDatepicker]="picker1">
+        <mat-datepicker-toggle class="whiteSmokeLabel" matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+      </mat-form-field>
+    </div>
     <editor apiKey="n0zjjp855koo6c45xxa86ptqybm4b9eakycd7lrnyr7nrcd2" formControlName="changelog" [init]="{
-     
      height: 300,
      menubar: true,
      plugins: [
@@ -14,7 +31,10 @@
        'undo redo | formatselect | bold italic backcolor | \
        alignleft aligncenter alignright alignjustify | \
        bullist numlist outdent indent | removeformat | help'
-   }"></editor>
+        }"></editor>
+
+    <button type="submit" mat-raised-button class="btnBackground submitBtn whiteSmokeLabel">Envoyer le
+      changelog</button>
   </form>
 
 </section>

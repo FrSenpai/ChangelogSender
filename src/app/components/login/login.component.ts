@@ -27,13 +27,14 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {}
-
+  
+  /**
+   * Submit values into inputs and try to login the potential user
+   */
   submit():void {
     this.auth.login(this.loginF.value.email, this.loginF.value.password).then((user) => {
-      console.log(user)
       //handle firebase error code
       if (user?.code) {
-        console.log("error")
         const error = this.fbError.handleError(user.code);
         this.alert.displayAlert('error', error)
         return
@@ -43,7 +44,7 @@ export class LoginComponent implements OnInit {
         this.alert.displayAlert('success', 'Vous êtes désormais connecté.')
         this.router.navigateByUrl('/')
       }
-      
+
     })
   }
 }
