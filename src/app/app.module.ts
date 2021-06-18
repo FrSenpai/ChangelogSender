@@ -23,6 +23,9 @@ import { EditorModule } from '@tinymce/tinymce-angular';
 import {MatIconModule} from '@angular/material/icon';
 import { ToastrModule } from 'ngx-toastr';
 import { BannerComponent } from './components/layouts/banner/banner.component'
+import {MatSelectModule} from '@angular/material/select';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 const firebaseConfig = {
   apiKey: "AIzaSyA0aT0mJR5ZscjKAqah6sEEn1NmKF7lYT8",
@@ -56,6 +59,9 @@ const firebaseConfig = {
     MatButtonModule,
     EditorModule,
     MatIconModule,
+    MatSelectModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right',
     })
